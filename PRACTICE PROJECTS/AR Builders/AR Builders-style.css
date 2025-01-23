@@ -1,0 +1,152 @@
+*{margin: 0px;
+    border: border-box;
+    font-family: Arial;
+}
+
+body{
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)) ,url(images/bakground_image.jpg);
+    background-size: cover;
+    height: 600px;
+    width: auto;
+}
+/* Header */
+.navbar{
+    height: 95px;
+    width: 100%;
+    /* background-color: rgb(255, 0, 0); */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navlogo{
+    color: white;
+    /* background-color: rgb(9, 88, 156); */
+    margin-left: 50px;
+    cursor: pointer;
+    font-size: 20px;
+
+}
+
+.nav-anchors{
+    height: 70px;
+    width: 60%;
+    /* background-color: rgb(221, 241, 32); */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-right: 20px;
+    margin-top: 11px;
+    
+}
+
+#anchors{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+/* Main */
+
+main{
+    height: 300px;
+    width: 100%;
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 2%;
+}
+.hero-section{
+    height: 130px;
+    width: 70%;
+    /* background-color: chartreuse; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-top: 14%;
+}
+
+.hero{
+    color: white;
+    font-size: 60px;
+    font-weight: bolder;
+    text-align: center;
+}
+.hero-msg{
+    height: 50px;
+    text-align: center;
+    /* background-color: purple; */
+    color: white;
+    width: 80%;
+   margin-left: 10%;
+   margin-top: 2%;
+}
+
+/* Footer */
+
+footer{
+    height: 200px;
+    width: 100%;
+    /* background-color: antiquewhite; */
+    display: flex;
+    justify-content: center;
+}
+
+.button-box{
+    height: 70px;
+    width: 45%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 1%;
+}
+
+
+.button{
+    color: white;
+    height: 38%;
+    width: 38%;
+    text-align: center;
+    padding-top: 11px;
+    border: 2px solid #009688;
+    border-radius: 25px;
+    background-color: transparent;
+    cursor: pointer;
+/*  */
+    position: relative;
+    overflow: hidden;
+    
+}
+
+span{
+    height: 100%;
+    width: 0%;
+    border-radius: 25px;
+    background-color: #009688;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    transition-duration: 0.5s;
+}
+
+.button:hover span{ 
+       width: 100%;
+} 
+
+.button:hover{ 
+        border: none; 
+}
+/* foot panel */
+
+.foot-panel{
+    height: 20px;
+    width: 40%;
+    background-color: transparent;
+    text-align: center;
+    transform: translateX(76%);
+    position: relative;
+    top: 20px;
+    color: antiquewhite;
+}

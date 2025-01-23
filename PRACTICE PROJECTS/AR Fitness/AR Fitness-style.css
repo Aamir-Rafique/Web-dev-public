@@ -1,0 +1,223 @@
+*{
+    margin: 0px;
+    font-family: Arial;
+    border: border-box;
+}
+body{
+    background-image: url(images/Background_image.jpg);
+    background-size: cover;
+    
+}
+.navbar{
+    height: 65px;
+    width: 100%;
+    display: flex;
+    
+}
+.logo{
+    font-size: 20px;
+    height: 100px;
+    width: 200px;
+    color: orange;
+    margin-top: 17.5px;
+    margin-left: 30px;
+}
+/*  */
+.nav-anchors{
+    display: flex;
+    justify-content: space-between;
+    height: 65px;
+    width: 460px;
+    /* background-color: antiquewhite; */
+    align-items: center;
+    margin-top: 3px;
+    margin-left: 30px;
+}
+#nav-anchors{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    
+
+}
+
+li{
+    list-style: none;
+}
+/*  */
+.nav-search{
+    margin-left: 15px;
+    height: 65px;
+    width: 375px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#search-bar{
+    font-size: 20px;
+    color: white;
+    height: 40px;
+    width: 220px; 
+    border:1px solid orange;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background-color: transparent;
+    
+
+}
+.search{
+      height: 40px;
+      width: 80px;
+    background-color: rgba(255, 166, 0, 0.919);
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    border: 1px solid rgba(255, 166, 0, 0.738);
+    color: white;
+    font-size: 14px;
+}
+.search:hover{
+    color: black;
+    background-color: rgba(255, 166, 0, 0.841);
+}
+
+/* hERO- SECTION */
+
+.hero-section{
+    height: 280px;
+    width: 600px;
+    margin-top: 110px;
+    margin-left: 60px;
+    
+}
+#hero-msg-h1{
+   font-size: 60px;
+   font-family:  Verdana;   
+   color: white;
+}
+big{
+    color: orange;
+    font-size: 80px;
+   font-family:  Verdana;
+   font-style: italic;
+}
+#hero-msg-p{
+    color: white;
+    margin-top: 10px;
+    font-size: 15px;
+
+}
+#join-us{
+    margin-top: 20px;
+    height: 30px;
+    width: 120px;
+    background-color: orange;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+}
+#join-us:hover{
+    background-color: wheat;
+}
+
+.login-box{
+    height: 350px;
+    width: 270px;
+    background-color:rgba(0, 0, 0, 0.642);
+    margin-left: 25px;
+    align-self: center;
+    margin-top:0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+   
+}
+main{
+    height: 600px;
+    width: 100%;
+   display: flex;
+    /* background-color:red; */
+}
+.login-here{
+    height: 30px;
+    width: 160px;
+    background-color: white;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 18px;
+    color: orange;
+    font-weight: bolder;
+    border-radius: 12px;
+}
+#email{
+    height: 30px;
+    width: 190px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid orange;
+    font-size: 13px;
+    color: white;
+    
+}
+
+#password{
+    height: 30px;
+    width: 190px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid orange;
+    font-size: 13px;
+    color: white;
+}
+#login-button{
+    height: 40px;
+    width: 190px;
+    background-color: orange;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 12px;
+    margin-top: 10px;
+    
+}
+#login-button:hover{
+    background-color: wheat;
+}
+
+#account-p{
+    color: white;
+    font-size: 15px;
+}
+#sign-up{
+    color: orange;
+    text-decoration: none;
+    
+   
+    /* margin-bottom: 0; */
+}
+#sign-up:hover{
+    text-decoration: underline;
+}
+/* social media*/
+.social-media{
+    text-align: center;
+    height: 70px;
+    width: 260px;
+    background-color: rgba(0, 0, 0, 0.642);
+    
+}
+
+#social-media-p{
+    font-size: 13px;
+    color: aliceblue;
+    padding-bottom: 5px;
+}
+.fa-brands{
+    /* padding-top: 0px; */
+    font-size: 25px;
+    color: white;
+    padding: 6px;
+}
+

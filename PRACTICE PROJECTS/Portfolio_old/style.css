@@ -1,0 +1,250 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+#navTop {
+    background-color: #0f172a;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 2;
+}
+
+
+#logo {
+    margin-left: 50px;
+    color: white;
+    text-decoration: none;
+    font-size: 43px;
+    font-family: 'cursive';
+}
+
+#logo:hover{
+    font-size: 50px;
+}
+
+.navAnchor {
+    color: #969aa1;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: none;
+    font-size: 23px;
+    margin-right: 40px;
+}
+
+.navAnchor:hover{
+    border: 3px solid rgb(238, 236, 236);
+    border-radius: 5px;
+}
+
+#theme {
+    height: 50px;
+    width: 50px;
+    background-image: url(images/lightbulb.png);
+    background-color: #283e70;
+    background-size: cover;
+    border: 1px solid #6583c9;
+    border-radius: 15px;
+    margin-right: 40px;
+}
+
+#theme:hover{
+    border: 3px solid white;
+}
+
+#theme:active {
+    background-image: url(images/moon.png);
+    background-size: cover;
+    background-color: white;
+}
+
+main {
+    padding-top: 150px;
+    background-color: #283e70;
+    height: 1200px;
+}
+
+
+#theme:hover {
+    cursor: pointer;
+
+    main {
+        background-color: white;
+    }
+}
+
+#section1 {
+    background-color: #283e70;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#article1 {
+    height: 500px;
+}
+
+#headingArticle1 {
+    color: white;
+    font-size: 60px;
+    font-family: rockwell;
+}
+
+#paraInArticle1 {
+    color: #969aa1;
+    font-family: sans-serif;
+    font-size: 23px;
+    width: 400px;
+}
+
+#circle1 {
+    height: 120px;
+    width: 120px;
+    background-color: rgba(0, 221, 255, 0.497);
+    border-radius: 50%;
+    position: absolute;
+    top: 240px;
+    left: 880px;
+}
+
+#circle2 {
+    height: 150px;
+    width: 150px;
+    background-color: rgba(23, 91, 200, 0.863);
+    border-radius: 50%;
+    position: absolute;
+    top: 530px;
+    left: 1200px;
+}
+
+#pic1 {
+    height: 400px;
+    width: 400px;
+    border: 1px solid #283e70;
+    border-radius: 50%;
+    background-image: url(images/Mar\ 2023.png);
+    background-size: cover;
+    z-index: 1;
+}
+
+
+
+/* ..... */
+
+
+#section2_1{
+    height: 100px;
+    background-color: #283e70;
+    text-align: center;
+    padding-top: 40px;
+}
+
+#h1InSection2_1{
+    color: white;
+    font-size: 60px;
+    font-family: rockwell;
+}
+
+#paraInSection2_1{
+    color: #969aa1;
+    font-family: sans-serif;
+    font-size: 23px;
+}
+
+#section2_2{
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.tools{
+    height: 250px;
+    width: 250px;
+    border: 4px solid rgba(0, 0, 0, 0.243);
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-color: #6583c9;
+}
+
+.tools:hover{
+    border: 8px solid white;
+}
+
+#tool1{
+    background-image: url(images/html-5.png);
+    background-size: cover;
+}
+
+#tool2{
+    background-image: url(images/css-3.png);
+    background-size: cover;
+}
+
+#tool3{
+    background-image: url(/Portfolio/images/c-sharp.png);
+    background-size: cover;
+}
+
+#tool4{
+    background-image: url(images/logo.png);
+    background-size: cover;
+}
+
+#tool5{
+    background-image: url(images/github.png);
+    background-size: cover;
+}
+
+/*  */
+footer {
+    height: 510px;
+    background-color: #0f172a;
+}
+
+#section3 {
+    display: flex;
+    justify-content: space-around;
+    align-items: normal;
+    height: 300px;
+    justify-content: space-between;
+    padding-top: 100px;
+}
+
+#paraInfooter {
+    color: #969aa1;
+    font-size: 20px;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+.footerAnchor {
+    color: #969aa1;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: none;
+    font-size: 20px;
+    display: block;
+    margin-top: 25px;
+}
+
+#footerH1 {
+    color: white;
+}
+
+#section4 {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #969aa1;
+}
+
+#paraInSection4 {
+    color: #969aa1;
+    font-size: 25px;
+}

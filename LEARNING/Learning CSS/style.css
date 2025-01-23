@@ -1,0 +1,404 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+/*
+h2{
+    background-color: aqua;
+} */
+
+/* Practice set 1 */
+/* #box{
+    background-color: blue;
+}
+
+.heading{
+    color: red;
+}
+
+#button{
+    color: green;
+}
+
+#heading{
+    text-align: center;
+    text-transform: capitalize;
+}
+
+#para{
+    font-family: 'Times New Roman';
+}
+
+#outer{
+    font-size: 25px;
+}
+
+#inner{
+    font-size: 10px;
+} */
+
+/* practice set 3 */
+/* #div{
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    border-radius: 50%;
+}
+
+#header{
+    height: 55px;
+    width: 100%;
+    border: 2px solid white;
+    background-color: black;
+}
+
+#amazon{
+    font-size: 25px;
+    color: orange;
+    text-decoration: none;
+    padding-right: 200px;
+}
+
+.anchor{
+    text-decoration: none;
+    color: white;
+    margin-right: 200px;
+}
+
+#searchbtn{
+    background-color: orange;
+    color: white;
+}
+
+
+.divInMain
+{
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+}
+
+#div1
+{
+    background-color: rgba(50, 168, 96,0.5) ;
+    display: inline;
+}
+
+#div2
+{
+    background-color:  rgba(97, 50, 168,0.5);
+    display: inline;
+}
+
+#div3
+{
+    background-color: rgba(168, 50, 72,0.5);
+    display: inline;
+}
+
+#contentArea
+{
+    
+    height: 400px;
+    background-color: aqua;
+}
+ */
+/* 
+#divNature
+{
+    font-size: 20px;
+    font-weight: bold;
+    height: 200px;
+    width: 350px;
+    border: 2px solid black;
+    background-image: url("Village.jpg");
+    background-size: cover;
+    position: fixed;
+    top: 450px;
+    left: 1050px;
+    z-index: -1;  zindex means z axis kitna under ya bahir  
+     background-image: url("Village.jpg"); 
+} 
+*/
+/* 
+#listItems{
+    height: 300px;
+    width: 1000px;
+    border: 3px solid black;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.anchorTag{
+    text-decoration: none;
+    color: black;
+
+}
+
+#Item1{
+    height: 100px;
+    width: 200px;
+    border: 2px solid black;
+    background-color: aqua;
+}
+
+#Item2{
+    height: 100px;
+    width: 200px;
+    background-color: blue;
+    border: 2px solid black;
+}
+
+#Item3{
+    height: 100px;
+    width: 200px;
+    background-color: yellow;
+    border: 2px solid black;
+}
+
+#Item4{
+    height: 100px;
+    width: 200px;
+    border: 2px solid black;
+    background-color: red;
+} */
+
+/* body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#divouter{
+    height: 300px;
+    width: 300px;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#divinner{
+    height: 150px;
+    width: 150px;
+    border: 2px solid black;
+} */
+
+/* #div0{
+    height: 100px;
+    width: 100px;
+    background-color: black;
+}
+
+@media (max-width:300px ){
+   #div0{
+    background-color: green;
+   }
+}
+
+@media (min-width:300px ) and (max-width:400px ){
+    #div0{
+        background-color: pink;
+    }
+}
+
+@media (min-width:400px ) and (max-width:600px ){
+    #div0{
+        background-color: red;
+    }
+}
+@media (min-width:600px ){
+    #div0{
+        background-color: blue;
+    }
+} */
+/* 
+#divLoader{
+    height: 200px;
+    width: 200px;
+    background-color: yellow;
+    border: 10px solid rgb(230, 0, 0);
+    position: absolute;
+    top: 200px;
+    left: 300px;
+    border-radius: 50%;
+    border-top: 10px solid  black;
+    animation-name: firstAnimation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+
+@keyframes firstAnimation{
+    from{rotate: 0deg;}
+    to{rotate: 360deg;}
+} */
+
+
+/* Lab 09 tasks */
+
+/* task 1.1 */
+#nav1{
+    background-color: rgb(22, 22, 22);
+    height: 60px;
+    display: flex; 
+    justify-content: left;
+}
+
+.anchor{
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    padding-right:30px;
+    font-weight: bold;
+}
+#anchorAbout{
+    margin-left: 900px;
+}
+
+.anchor:hover{
+    background-color: rgb(179, 222, 24) ;
+}
+
+/* task 1.2 */
+#nav1{
+    background-color: rgb(227, 223, 223);
+    height: 60px;
+    display: flex; 
+    justify-content: left;
+}
+
+.anchor{
+    color:black;
+    text-decoration: none;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    padding-right:30px;
+    font-weight: bold;
+}
+#anchorAbout{
+    margin-left: 900px;
+}
+
+.anchor:hover{
+    background-color: rgb(0, 145, 255) ;
+    color: white;
+}
+
+
+/* task # 3 */
+
+#task3{
+    height: 700px;
+    background-image: url(Background_image.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+
+}
+
+.login-box{
+    height: 450px;
+    width: 370px;
+    background-color:rgba(0, 0, 0, 0.642);
+    margin-left: 25px;
+    align-self: center;
+    margin-top:0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+   
+}
+
+
+.login-here{
+    height: 30px;
+    width: 160px;
+    background-color: white;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 25px;
+    color: orange;
+    font-weight: bolder;
+    border-radius: 12px;
+}
+#email{
+    height: 50px;
+    width: 270px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid orange;
+    font-size: 13px;
+    color: white;
+    
+}
+
+#password{
+    height: 50px;
+    width: 270px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid orange;
+    font-size: 13px;
+    color: white;
+}
+#login-button{
+    height: 40px;
+    width: 190px;
+    background-color: orange;
+    font-weight: bold;
+    font-size: 23px;
+    border: none;
+    border-radius: 12px;
+    margin-top: 10px;
+    
+}
+#login-button:hover{
+    background-color: wheat;
+}
+
+#account-p{
+    color: white;
+    font-size: 20px;
+}
+#sign-up{
+    color: orange;
+    text-decoration: none;
+    font-size: 20px;
+    /* margin-bottom: 0; */
+}
+#sign-up:hover{
+    text-decoration: underline;
+}
+/* social media*/
+.social-media{
+    text-align: center;
+    height: 70px;
+    width: 260px;
+    background-color: rgba(0, 0, 0, 0.642);
+    
+}
+
+#social-media-p{
+    font-size: 18px;
+    color: aliceblue;
+    padding-bottom: 5px;
+}
+.fa-brands{
+    /* padding-top: 0px; */
+    font-size: 35px;
+    color: white;
+    padding: 6px;
+}
+
+
