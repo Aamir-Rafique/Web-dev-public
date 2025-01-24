@@ -410,3 +410,18 @@ let txt = "";
 // }
 
 
+
+//  Exercise 13 - creating a yt video card dynamically 
+
+let container = document.querySelector(".container");
+container.style.height = '150px';
+container.style.width = '700px';
+container.style.margin = '50px';
+container.style.backgroundColor = "rgb(15,15,15)";
+let thumbImage= document.createElement('div');
+
+function CreateCard(title, channelName, views, yearOld, duration, thumbnail){
+
+}
+
+
