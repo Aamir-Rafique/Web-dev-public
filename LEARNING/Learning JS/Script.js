@@ -413,15 +413,61 @@ let txt = "";
 
 //  Exercise 13 - creating a yt video card dynamically 
 
-let container = document.querySelector(".container");
-container.style.height = '150px';
-container.style.width = '700px';
-container.style.margin = '50px';
-container.style.backgroundColor = "rgb(15,15,15)";
-let thumbImage= document.createElement('div');
+function CreateCard(title, channelName, views, timeUploaded, duration, thumbnail) {
 
-function CreateCard(title, channelName, views, yearOld, duration, thumbnail){
+    let viewCount;
+    if (views>=1000 && views < 1000000) { viewCount = views / 1000 + "K"; }
+    else if (views >= 1000000) { viewCount = views / 1000000 + "M"; }
+    else if( views<1000) { viewCount = views ; }
+    else{viewCount="no "}
+    
+    let uploadTime;
+    let months=12;
+    if(timeUploaded<months) {uploadTime=timeUploaded + " month "}
+    else if(timeUploaded>=months) {uploadTime=timeUploaded/12 + " year"}
 
+
+    let html = ` <div class="card">
+            <div class="image">
+                <img src="${thumbnail}"
+                    alt="">
+                <div class="capsule">${duration}</div>
+            </div>
+            <div class="text">
+                <h3>${title}</h3>
+                <p>${channelName} . ${viewCount} views . ${uploadTime} ago</p>
+            </div>
+        </div>`;
+
+
+        document.querySelector(".container").innerHTML+=html;
 }
 
 
+
+function UploadVideo() {
+    // Sample data for a new video card
+    const newVideo = {
+        title: "Installing VS & How Webistes work | Sigma Web Development Course - Tutorial #1",
+        channel: "New Channel Name",
+        views: 500000,
+        timeUploaded: 6, // months
+        duration: "10:00",
+        thumbnail: "https://i.ytimg.com/vi/tVzUXW6siu0/hqdefault.jpg?sqp=-oaymwEmCMQBEG5IWvKriqkDGQgBFQAAiEIYAdgBAeIBCggYEAIYBjgBQAE=&rs=AOn4CLA5x0rcbtKnJz4e0WJDyiuniijfCQ"
+    };
+    
+    CreateCard(
+        newVideo.title,
+        newVideo.channel,
+        newVideo.views,
+        newVideo.timeUploaded,
+        newVideo.duration,
+        newVideo.thumbnail
+    );
+}
+    
+    //for initial video
+    // CreateCard("Installing VS Code & How Webistes work | Sigma Web Development Course - Tutorial #1", "CodeWithHarry", 3500000, 12 ,"31:50","https://i.ytimg.com/vi/tVzUXW6siu0/hqdefault.jpg?sqp=-oaymwEmCMQBEG5IWvKriqkDGQgBFQAAiEIYAdgBAeIBCggYEAIYBjgBQAE=&rs=AOn4CLA5x0rcbtKnJz4e0WJDyiuniijfCQ");
+    
+    //here for timeUploaded, put no of months
+    

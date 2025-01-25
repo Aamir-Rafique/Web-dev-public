@@ -16,14 +16,64 @@
         }
     </style> -->
 
+    <style>
+        .card{
+            height: 140px;
+            width: 1020px;
+            background-color: rgb(15, 15, 15);
+            display: flex;
+            justify-content:space-between;
+            align-items: center;
+            color: white;
+            padding: 12px;
+            margin: 5px;
+            gap: 10px;
+        }
+
+        .text {
+            padding-bottom: 50px;
+            /* padding-left: 10px; */
+        }
+
+        .text h3{
+            font-family: Arial, Helvetica, sans-serif;
+            padding-top: 15px;
+            margin: 0;
+        }
+        .text p{
+            color: rgb(146, 148, 150);
+            font-size: 16px;
+        }
+
+        .image{
+            position: relative;
+        }
+
+        .image img{
+            width: 200px;
+        }
+        .capsule
+        {
+            position: absolute;
+            z-index: 1;
+            bottom: 6px;
+            right: 3px;
+            background-color: rgb(42, 36, 36);
+            opacity: 0.85;
+            padding: 0 2px 0 2px;
+            border-radius: 3px;
+        }
+</style>
+
 </head>
+
 <body>
     <!-- <h1>Learing JS</h1>
     <p id="paragraph">This is a paragraph</p>
 
     <button id="button" onclick="document.getElementById('paragraph').innerHTML='hello world!'">try it</button>
      -->
-    
+
     <!-- Exercise 12 - Given 5 boxes assign a random color and a random background color to each box using DOM concepts -->
 
     <!-- <div class="container">
@@ -37,11 +87,16 @@
 
     <!-- Exercise 13 - creating a yt video card dynamically -->
 
-        <div class="container">
+    <div  class="container">
+      
+    </div>
 
-        </div>
+    <button onclick="UploadVideo()">
+        upload video
+    </button>
+    
 
-     <script src="Script.js"></script>
+    <script src="Script.js"></script>
 
 
 
