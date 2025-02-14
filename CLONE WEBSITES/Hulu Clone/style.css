@@ -9,7 +9,7 @@ html {
 }
 
 body {
-    max-width: 100vw;
+    max-width: 100%;
 }
 
 /* .........Header........ */
@@ -716,6 +716,7 @@ footer {
 @media (max-width: 768px) {
     header, .header-top {
         height: 100vh;
+        
     }
 
     nav {
@@ -728,7 +729,7 @@ footer {
     }
 
     .main-top-banners {
-        flex-wrap: wrap; /* Allow banners to stack */
+        flex-direction: column; /* Allow banners to stack */
     }
 
     .main-top-banner1,

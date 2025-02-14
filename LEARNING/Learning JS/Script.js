@@ -413,61 +413,74 @@ let txt = "";
 
 //  Exercise 13 - creating a yt video card dynamically 
 
-function CreateCard(title, channelName, views, timeUploaded, duration, thumbnail) {
+// function CreateCard(title, channelName, views, timeUploaded, duration, thumbnail) {
 
-    let viewCount;
-    if (views>=1000 && views < 1000000) { viewCount = views / 1000 + "K"; }
-    else if (views >= 1000000) { viewCount = views / 1000000 + "M"; }
-    else if( views<1000) { viewCount = views ; }
-    else{viewCount="no "}
-    
-    let uploadTime;
-    let months=12;
-    if(timeUploaded<months) {uploadTime=timeUploaded + " month "}
-    else if(timeUploaded>=months) {uploadTime=timeUploaded/12 + " year"}
+//     let viewCount;
+//     if (views>=1000 && views < 1000000) { viewCount = views / 1000 + "K"; }
+//     else if (views >= 1000000) { viewCount = views / 1000000 + "M"; }
+//     else if( views<1000) { viewCount = views ; }
+//     else{viewCount="no "}
 
-
-    let html = ` <div class="card">
-            <div class="image">
-                <img src="${thumbnail}"
-                    alt="">
-                <div class="capsule">${duration}</div>
-            </div>
-            <div class="text">
-                <h3>${title}</h3>
-                <p>${channelName} . ${viewCount} views . ${uploadTime} ago</p>
-            </div>
-        </div>`;
+//     let uploadTime;
+//     let months=12;
+//     if(timeUploaded<months) {uploadTime=timeUploaded + " month "}
+//     else if(timeUploaded>=months) {uploadTime=timeUploaded/12 + " year"}
 
 
-        document.querySelector(".container").innerHTML+=html;
-}
+//     let html = ` <div class="card">
+//             <div class="image">
+//                 <img src="${thumbnail}"
+//                     alt="">
+//                 <div class="capsule">${duration}</div>
+//             </div>
+//             <div class="text">
+//                 <h3>${title}</h3>
+//                 <p>${channelName} . ${viewCount} views . ${uploadTime} ago</p>
+//             </div>
+//         </div>`;
+
+
+//         document.querySelector(".container").innerHTML+=html;
+// }
 
 
 
-function UploadVideo() {
-    // Sample data for a new video card
-    const newVideo = {
-        title: "Installing VS & How Webistes work | Sigma Web Development Course - Tutorial #1",
-        channel: "New Channel Name",
-        views: 500000,
-        timeUploaded: 6, // months
-        duration: "10:00",
-        thumbnail: "https://i.ytimg.com/vi/tVzUXW6siu0/hqdefault.jpg?sqp=-oaymwEmCMQBEG5IWvKriqkDGQgBFQAAiEIYAdgBAeIBCggYEAIYBjgBQAE=&rs=AOn4CLA5x0rcbtKnJz4e0WJDyiuniijfCQ"
-    };
-    
-    CreateCard(
-        newVideo.title,
-        newVideo.channel,
-        newVideo.views,
-        newVideo.timeUploaded,
-        newVideo.duration,
-        newVideo.thumbnail
-    );
-}
-    
-    //for initial video
-    // CreateCard("Installing VS Code & How Webistes work | Sigma Web Development Course - Tutorial #1", "CodeWithHarry", 3500000, 12 ,"31:50","https://i.ytimg.com/vi/tVzUXW6siu0/hqdefault.jpg?sqp=-oaymwEmCMQBEG5IWvKriqkDGQgBFQAAiEIYAdgBAeIBCggYEAIYBjgBQAE=&rs=AOn4CLA5x0rcbtKnJz4e0WJDyiuniijfCQ");
-    
-    //here for timeUploaded, put no of months
-    
+// function UploadVideo() {
+//     // Sample data for a new video card
+//     const newVideo = {
+//         title: "Installing VS & How Webistes work | Sigma Web Development Course - Tutorial #1",
+//         channel: "New Channel Name",
+//         views: 500000,
+//         timeUploaded: 6, // months
+//         duration: "10:00",
+//         thumbnail: "https://i.ytimg.com/vi/tVzUXW6siu0/hqdefault.jpg?sqp=-oaymwEmCMQBEG5IWvKriqkDGQgBFQAAiEIYAdgBAeIBCggYEAIYBjgBQAE=&rs=AOn4CLA5x0rcbtKnJz4e0WJDyiuniijfCQ"
+//     };
+
+//     CreateCard(
+//         newVideo.title,
+//         newVideo.channel,
+//         newVideo.views,
+//         newVideo.timeUploaded,
+//         newVideo.duration,
+//         newVideo.thumbnail
+//     );
+// }
+
+//for initial video
+// CreateCard("Installing VS Code & How Webistes work | Sigma Web Development Course - Tutorial #1", "CodeWithHarry", 3500000, 12 ,"31:50","https://i.ytimg.com/vi/tVzUXW6siu0/hqdefault.jpg?sqp=-oaymwEmCMQBEG5IWvKriqkDGQgBFQAAiEIYAdgBAeIBCggYEAIYBjgBQAE=&rs=AOn4CLA5x0rcbtKnJz4e0WJDyiuniijfCQ");
+
+//here for timeUploaded, put no of months
+
+
+
+// ... video no. 74
+
+let button = document.getElementById("btn");
+button.addEventListener("mouseover", () => {
+    alert("Hey there!");
+});
+
+// let button = document.getElementById("btn");
+// button.addEventListener("mouseover", (e) => {
+//     console.log(e,e.key or e.keycode);
+// });
