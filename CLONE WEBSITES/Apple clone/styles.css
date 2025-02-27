@@ -1,0 +1,967 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    height: 7.5vh;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.94);
+    gap: 2.8vmax;
+    z-index: 1;
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2.6vmax;
+}
+
+nav a {
+    font-size: 1vmax;
+    font-weight: 500;
+    text-decoration: none;
+    color: #4f4f50;
+}
+
+nav #items {
+    /* background-color: red; */
+}
+
+nav #store:hover nav {
+    height: 50vh;
+}
+
+nav img {
+    width: 1.2vw;
+}
+
+nav #menu {
+    display: none;
+}
+
+/* HEADER */
+
+header .hero {
+    max-width: 100%;
+    height: 130vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20vh;
+    /*  */
+    position: relative;
+    overflow: hidden;
+}
+
+.hero .bg-video {
+    height: 100%;
+    width: 100vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+    /* background: url(images/hero-16e.png) no-repeat; */
+    /* background-size: cover; */
+
+}
+
+.hero>button {
+    height: 4vmax;
+    width: 16vmax;
+    color: #4f4f50;
+    background-color: rgba(255, 255, 255, 0.873);
+    border-radius: 50px;
+    font-size: 1.5vmax;
+    border: none;
+    box-shadow: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1vmax;
+    box-shadow: 0 0 40px rgba(28, 27, 27, 0.298);
+    /*  */
+    /* position: relative;     */
+    /* z-index: 1; */
+}
+
+.hero>button:hover {
+    background-color: rgba(255, 255, 255);
+    cursor: pointer;
+}
+
+.hero>.hero-slider {
+    height: 65%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1.8vmax;
+    padding-top: 4vw;
+    border-radius: 30px 30px 0px 0px;
+    box-shadow: 0 0 40px rgba(37, 37, 37, 0.298);
+    background-color: rgba(255, 255, 255, 0.976);
+    /*  */
+}
+
+.hero-slider .hero-slider-btn {
+    display: flex;
+    gap: 2vmax;
+}
+
+.hero-slider button {
+    height: 3.5vmax;
+    width: 10vmax;
+    border-radius: 50px;
+    font-size: 1.2vmax;
+    color: white;
+    border: 1.5px solid dodgerblue;
+    cursor: pointer;
+}
+
+.hero-slider #button1 {
+    background-color: dodgerblue;
+}
+
+.hero-slider #button1:hover {
+    background-color: rgb(55, 150, 245);
+    border-color: rgb(55, 150, 245);
+}
+
+.hero-slider #button2 {
+    color: dodgerblue;
+}
+
+.hero-slider #button2:hover {
+    background-color: rgb(55, 150, 245);
+    border-color: rgb(55, 150, 245);
+    color: white;
+}
+
+.hero-slider .img {
+    height: 12vw;
+    width: 83%;
+    background-image: url(images/hero-16e.png);
+    background-size: cover;
+}
+
+.hero-slider .img-mob {
+    display: none;
+}
+
+
+.hero-slider h1 {
+    font-size: 4.2vmax;
+}
+
+.hero-slider h1 span {
+    background-image: linear-gradient(to bottom, orange, red, purple, blue);
+    color: transparent;
+    background-clip: text;
+}
+
+.hero-slider h2 {
+    font-weight: 540;
+}
+
+.hero-slider h4 {
+    /* display: none; */
+    color: gray;
+    font-weight: 100;
+    font-size: 1.5vmax;
+}
+
+
+/* gradient text */
+.hero-slider #p {
+    background-image: linear-gradient(to right, blue, purple, rgb(215, 110, 128), red, rgb(255, 132, 0));
+    font-weight: 400;
+    color: transparent;
+    background-clip: text;
+    font-size: 1.6vmax;
+    /* display: none; */
+}
+
+/* horizontal-gap div */
+.horizontal-gap {
+    height: 12px;
+    width: 100%;
+    background-color: white;
+}
+
+/*------ Main-------- */
+
+main {
+    height: 540vh;
+    max-width: 100%;
+}
+
+/* main1 */
+.main1 {
+    color: white;
+    height: 18%;
+    max-width: 100%;
+    background-image: url(images/main1_bg.png);
+    background-size: cover;
+    background-position: top;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 48px;
+    gap: 18px;
+}
+
+.main1 h1 {
+    font-size: 4.2vmax;
+}
+
+.main1 p {
+    font-size: 2.2vmax;
+}
+
+.main1 .main1-btns {
+    display: flex;
+    gap: 2vmax;
+}
+
+.main1 #button1 {
+    height: 3.5vmax;
+    width: 10vmax;
+    background-color: dodgerblue;
+    border-radius: 50px;
+    font-size: 1.2vmax;
+    color: white;
+    border: 1.5px solid dodgerblue;
+    cursor: pointer;
+}
+
+.main1 #button1:hover {
+    background-color: rgb(43, 141, 238);
+    border-color: rgb(43, 141, 238);
+}
+
+.main1 #button2 {
+    height: 3.5vmax;
+    width: 5vmax;
+    background-color: transparent;
+    border-radius: 50px;
+    font-size: 1.2vmax;
+    color: dodgerblue;
+    border: 1.5px solid dodgerblue;
+    cursor: pointer;
+}
+
+.main1 #button2:hover {
+    background-color: rgb(55, 150, 245);
+    border-color: rgb(55, 150, 245);
+    color: white;
+}
+
+/* main2 */
+.main2 {
+    color: white;
+    height: 18%;
+    max-width: 100%;
+    background-image: linear-gradient(to bottom, #1e278e, rgb(245, 239, 239));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 48px;
+    gap: 18px;
+}
+
+.main2 #img-main2 {
+    width: 66%;
+}
+
+.main2 #img-main2-mob {
+    display: none;
+}
+
+.main2 h1 {
+    font-size: 4.2vmax;
+}
+
+.main2 p {
+    font-size: 2.2vmax;
+}
+
+.main2 #button1 {
+    height: 3.5vmax;
+    width: 10vmax;
+    background-color: rgb(235, 232, 232);
+    border-radius: 50px;
+    font-size: 1.2vmax;
+    color: black;
+    border: 1px solid rgb(235, 232, 232);
+}
+
+.main2 #button1:hover {
+    background-color: white;
+    border-color: white;
+    cursor: pointer;
+}
+
+.main2 #button2 {
+    height: 3.5vmax;
+    width: 5vmax;
+    background-color: transparent;
+    border-radius: 50px;
+    font-size: 1.2vmax;
+    color: rgb(254, 247, 247);
+    border: 1px solid rgb(235, 232, 232);
+}
+
+.main2 #button2:hover {
+    background-color: white;
+    cursor: pointer;
+    color: black;
+}
+
+/* main3 */
+.main3 {
+    color: white;
+    height: 18%;
+    width: 100%;
+    display: flex;
+}
+
+/* vertical gap */
+.vertical-gap {
+    height: 100%;
+    width: 12px;
+    background-color: white;
+}
+
+.main3 .section1 {
+    height: 100%;
+    width: 50%;
+    padding-top: 48px;
+    background-image: url(images/main3_sec1b.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8vmax;
+}
+
+.main3 .section2 {
+    height: 100%;
+    width: 50%;
+    background-color: black;
+    background-image: url(images/main3_sec2.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 18vmax;
+}
+
+.main3 .horizontal-gap {
+    display: none;
+}
+
+.main3 .section2 .section2-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1vmax;
+}
+
+.main3 .main3-btns {
+    display: flex;
+    gap: 1vmax;
+}
+
+.main3 #button1 {
+    height: 3vmax;
+    width: 8vmax;
+    background-color: dodgerblue;
+    border-radius: 50px;
+    font-size: 1.2vmax;
+    color: white;
+    border: 1px solid dodgerblue;
+}
+
+.main3 #button2 {
+    height: 3vmax;
+    width: 4.3vmax;
+    background-color: transparent;
+    border-radius: 50px;
+    font-size: 1.2vmax;
+    color: dodgerblue;
+    border: 1px solid dodgerblue;
+}
+
+.main3 #button1:hover {
+    background-color: rgb(43, 141, 238);
+    border-color: rgb(43, 141, 238);
+    cursor: pointer;
+}
+
+.main3 #button2:hover {
+    background-color: rgb(55, 150, 245);
+    border-color: rgb(55, 150, 245);
+    color: white;
+    cursor: pointer;
+}
+
+
+.main3 .section1 img {
+    width: 25%;
+}
+
+.main3 h1 {
+    font-size: 3vmax;
+}
+
+.main3 .section1 p {
+    color: black;
+    font-size: 1.6vmax;
+}
+
+.main3 .section2 p {
+    font-weight: 500;
+    font-size: 1.6vmax;
+}
+
+/* gradient text */
+.main3 .section2-bottom #p {
+    background-image: linear-gradient(to right, dodgerblue, rgb(190, 53, 190), rgb(215, 110, 128), rgb(249, 57, 57), rgb(255, 132, 0));
+    font-weight: 500;
+    color: transparent;
+    background-clip: text;
+}
+
+
+/* main4 */
+.main4 {
+    color: white;
+    height: 18%;
+    width: 100%;
+    display: flex;
+}
+
+
+.main4 .horizontal-gap {
+    display: none;
+}
+
+.main4 .section1 {
+    height: 100%;
+    width: 50%;
+    padding-top: 48px;
+    background-color: rgb(238, 233, 233);
+    background-size: stretch;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8vmax;
+}
+
+.main4 .section2 {
+    height: 100%;
+    width: 50%;
+    background-color: black;
+    background-image: url(images/main4_sec2.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1vmax;
+    padding-bottom: 48px;
+}
+
+.main4 #button1 {
+    height: 3vmax;
+    width: 8vmax;
+    background-color: dodgerblue;
+    border-radius: 50px;
+    font-size: 1.2vmax;
+    color: white;
+    border: 1px solid dodgerblue;
+}
+
+.main4 #button2 {
+    height: 3vmax;
+    width: 4.3vmax;
+    background-color: transparent;
+    border-radius: 50px;
+    font-size: 1.2vmax;
+    color: dodgerblue;
+    border: 1px solid dodgerblue;
+}
+
+
+.main4 #button1:hover {
+    background-color: rgb(43, 141, 238);
+    border-color: rgb(43, 141, 238);
+    cursor: pointer;
+}
+
+.main4 #button2:hover {
+    background-color: rgb(55, 150, 245);
+    border-color: rgb(55, 150, 245);
+    color: white;
+    cursor: pointer;
+}
+
+.main4 .main4-btns {
+    display: flex;
+    gap: 1vmax;
+}
+
+.main4 h1 {
+    font-size: 2.6vmax;
+}
+
+.main4 .section1 p {
+    color: black;
+    font-size: 1.6vmax;
+}
+
+.main4 .section2 p {
+    font-weight: 500;
+    font-size: 1.6vmax;
+}
+
+/* main5 */
+.main5 {
+    color: white;
+    height: 18%;
+    max-width: 100%;
+    display: flex;
+}
+
+.main5 .horizontal-gap {
+    display: none;
+}
+
+.main5 .section1 {
+    height: 100%;
+    width: 50%;
+    padding-top: 48px;
+    background-image: url(images/main5_sec1b.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8vmax;
+}
+
+.main5 .section2 {
+    height: 100%;
+    width: 50%;
+    background-color: black;
+    background-image: url(images/main5_sec2b.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 48px;
+    gap: 1vmax;
+}
+
+
+.main5 #sec1-button1 {
+    height: 3vmax;
+    width: 12vmax;
+    background-color: dodgerblue;
+    border-radius: 50px;
+    font-size: 1.2vmax;
+    color: white;
+    border: 1px solid dodgerblue;
+    cursor: pointer;
+}
+
+.main5 #button1 {
+    height: 3vmax;
+    width: 8vmax;
+    background-color: dodgerblue;
+    border-radius: 50px;
+    font-size: 1.2vmax;
+    color: white;
+    border: 1px solid dodgerblue;
+}
+
+.main5 #button2 {
+    height: 3vmax;
+    width: 8vmax;
+    background-color: transparent;
+    border-radius: 50px;
+    font-size: 1.2vmax;
+    color: dodgerblue;
+    border: 1px solid dodgerblue;
+}
+
+
+.main5 #button1:hover {
+    background-color: rgb(43, 141, 238);
+    border-color: rgb(43, 141, 238);
+    cursor: pointer;
+}
+
+.main5 #button2:hover {
+    background-color: rgb(55, 150, 245);
+    border-color: rgb(55, 150, 245);
+    color: white;
+    cursor: pointer;
+}
+
+.main5 .main5-btns {
+    display: flex;
+    gap: 1vmax;
+}
+
+.main5 p {
+    width: 25vw;
+    color: black;
+    font-size: 1.6vmax;
+    text-align: center;
+}
+
+/* .main5 .section2 p {
+    color: black;
+    font-weight: 500;
+    font-size: 1.6vmax;
+} */
+
+.main5 img {
+    width: 20%;
+}
+
+
+
+/* main 6 */
+
+.main6 {
+    height: 8%;
+    width: 100%;
+    display: flex;
+}
+
+.main6 .horizontal-gap {
+    display: none;
+}
+
+.main6 .section1 {
+    height: 100%;
+    width: 33%;
+    background-image: linear-gradient(transparent, transparent, rgba(30, 29, 29, 0.817)), url(images/main6_sec1.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    transition: background-image 1s ease-in-out;
+}
+
+.main6 .section2 {
+    height: 100%;
+    width: 33%;
+    background-image: linear-gradient(transparent, transparent, rgba(30, 29, 29, 0.817)), url(images/main6_sec2.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.main6 .section3 {
+    height: 100%;
+    width: 33%;
+    background-image: linear-gradient(transparent, transparent, rgba(30, 29, 29, 0.817)), url(images/main6_sec3.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.main6 .section1 img {
+    width: 25%;
+    margin-left: 75%;
+    padding: 0 9px 2px 0;
+}
+
+.main6 .section2 img {
+    width: 22%;
+    margin-left: 75%;
+    padding: 0 8px 6px 0;
+}
+
+.main6 .section3 img {
+    width: 15%;
+    margin-left: 82%;
+    padding: 0 10px 8px 0;
+}
+
+.main6 button {
+    height: 3vmax;
+    width: 7vmax;
+    background-color: white;
+    border-radius: 50px;
+    font-size: 1.2vmax;
+    color: black;
+    border: 1px solid white;
+    margin-bottom: 5%;
+    visibility: hidden;
+    cursor: pointer;
+}
+
+.main6 .section1:hover {
+    background-image: linear-gradient(rgba(10, 10, 10, 0.759), rgba(0, 0, 0, 0.318), rgba(0, 0, 0, 0.833)), url(images/main6_sec1.jpg);
+
+}
+
+.main6 .section2:hover {
+    background-image: linear-gradient(rgba(10, 10, 10, 0.759), rgba(0, 0, 0, 0.318), rgba(0, 0, 0, 0.833)), url(images/main6_sec2.jpg);
+}
+
+.main6 .section3:hover {
+    background-image: linear-gradient(rgba(10, 10, 10, 0.759), rgba(0, 0, 0, 0.318), rgba(0, 0, 0, 0.833)), url(images/main6_sec3.jpg);
+}
+
+.main6 .section1:hover button {
+    visibility: visible;
+    transform: translateY(-70px);
+    transition-duration: 0.6s;
+}
+
+.main6 .section2:hover button {
+    visibility: visible;
+    transform: translateY(-70px);
+    transition-duration: 0.6s;
+}
+
+.main6 .section3:hover button {
+    visibility: visible;
+    transform: translateY(-70px);
+    transition-duration: 0.6s;
+}
+
+
+/* FOOTER */
+
+footer {
+    height: 180vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: whitesmoke;
+}
+
+/*  */
+footer .section1 {
+    height: 38%;
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+footer .section1 p {
+    font-size: 0.95vmax;
+    color: rgb(125, 121, 121);
+
+}
+
+footer .section1 #links {
+    font-size: 1vmax;
+    color: rgb(75, 73, 73);
+}
+
+/*  */
+footer .section2 {
+    height: 52%;
+    width: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 0.7px solid rgba(125, 121, 121, 0.725);
+}
+
+footer .section2-mob {
+    display: none;
+}
+
+footer .section2 #arrow-down {
+    display: none;
+}
+
+footer .section2 h4 {
+    font-size: 0.95vmax;
+    color: rgb(28, 28, 28);
+    font-weight: 554;
+
+}
+
+footer .section2 #anchors {
+    font-size: 0.95vmax;
+    text-decoration: none;
+    color: rgb(113, 112, 112);
+}
+
+footer .section2 #anchors:hover {
+    text-decoration: underline;
+}
+
+
+footer .section2 .list {
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 3vmax;
+}
+
+footer .section2 .sub-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+footer .section2 .list1-a {
+    height: 60%;
+}
+
+footer .section2 .list1-b {
+    height: 26%;
+}
+
+
+footer .section2 .list2-a {
+    height: 19%;
+}
+
+footer .section2 .list2-b {
+    height: 50%;
+}
+
+
+footer .section2 .list3 .list3-a {
+    height: 66%;
+}
+
+
+footer .section2 .list4 .list4-a {
+    height: 13.5%;
+}
+
+footer .section2 .list4 .list4-b {
+    height: 18%;
+}
+
+footer .section2 .list4 .list4-c {
+    height: 24%;
+}
+
+footer .section2 .list4 .list4-d {
+    height: 13.5%;
+}
+
+
+footer .section2 .list5 .list5-a {
+    height: 40%;
+}
+
+footer .section2 .list5 .list5-b {
+    height: 40%;
+}
+
+
+
+/*  */
+footer .section3 {
+    height: 4%;
+    width: 75%;
+    border-bottom: 0.7px solid rgba(125, 121, 121, 0.725);
+    display: flex;
+}
+
+footer .section3 p {
+    font-size: 0.95vmax;
+    color: rgb(125, 121, 121);
+}
+
+footer .section3 #links {
+    color: rgb(64, 125, 237);
+}
+
+
+/*  */
+
+footer .section4 {
+    height: 6%;
+    width: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer .section4 p {
+    font-size: 1vmax;
+    color: rgb(85, 82, 82);
+}
+
+footer .section4 #anchors {
+    font-size: 0.95vmax;
+    text-decoration: none;
+    color: rgb(59, 57, 57);
+}
+
+footer .section4 #anchors:hover {
+    text-decoration: underline;
+}
+
+footer .section4 h6 {
+    color: rgb(58, 57, 57);
+}
+
+footer .section4 h5 {
+    font-size: 1vmax;
+    color: rgb(94, 92, 92);
+    font-weight: 400;
+}
+
+footer .section4 h5:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+footer .section4 .foot-middle {
+    width: 48%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* ------------------------------------------- */
