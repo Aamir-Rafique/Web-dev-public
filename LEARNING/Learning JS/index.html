@@ -17,7 +17,7 @@
     </style> -->
 
     <style>
-        .card{
+        /* .card{
             height: 140px;
             width: 1020px;
             background-color: rgb(15, 15, 15);
@@ -32,7 +32,7 @@
 
         .text {
             padding-bottom: 50px;
-            /* padding-left: 10px; */
+            padding-left: 10px; 
         }
 
         .text h3{
@@ -62,7 +62,116 @@
             opacity: 0.85;
             padding: 0 2px 0 2px;
             border-radius: 3px;
+            } */
+
+/* Rock paper scissor game.. */
+/* *{
+    padding: 0;
+margin: 0;
+}
+
+.nav{
+            height: 10vh;
+            width: 100%;
+            background-color: darkblue;   
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
+        .nav h1{
+            color: white;
+        }
+
+        .body{
+            height: 90vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        .body .img{
+            height: 8vmax;
+            width: 8vmax;
+            border-radius: 50px;
+            cursor: pointer;
+        }
+        
+        .img:hover{
+            border: 2px solid black;
+        }
+
+     #rock{
+            background-image:url(images/handrock.png);
+            background-size: cover;
+            background-color: pink;
+        }
+     #paper{
+            background-image:url(images/hand-paper.png);
+            background-size: cover;
+            border-radius: 40px;
+            background-color: aqua;
+        }
+     #scissor{
+            background-image:url(images/scissors.png);
+            background-size: cover;
+            background-color: greenyellow;
+        }
+
+        .body .options{
+            width: 50%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .body .score-board{
+            height: 15%;
+            width: 18%;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .score-board .sec1{
+            height: 50%;
+            display: flex;
+            justify-content: space-evenly;
+            gap: 2vw;
+        }
+        .score-board h2{
+                font-size: 3vmax;
+        }
+        .score-board h3{
+                font-size: 2vmax;
+        }
+        .score-board .sec2{
+            height: 50%;
+            display: flex;
+            justify-content: space-evenly;
+            gap: 1vw;
+            align-items: center;
+        }
+
+        .body .instruction{
+            height: 50px;
+            width: auto;
+            padding: 0 10px 0 10px;
+            background-color: rgb(15, 48, 88);
+            font-size: 2vmax;
+            color: white;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+        }
+
+        .body .computerChoice{
+            height: 40px;
+            width: auto;
+            display: flex;
+            align-items: center;
+            font-size: 1.5vmax;
+        } */
 </style>
 
 </head>
@@ -99,17 +208,211 @@
 
 
     <!-- Video 74 -->
-    <div class="container">
+    <!-- <div class="container">
         <button id="btn">
             Click me! 
         </button>
     </div>
 
 
-    <script src="Script.js"></script>
+    <script src="Script.js"></script> -->
+
+
+    <!-- Qs. Create a H2 heading element with text - “Hello JavaScript”. Append “from Apna College
+ students” to this text using JS. -->
+
+ <!-- <h2 id="heading">Hello JavaScript</h2> -->
+
+ <!--  Qs. Create 3 divs with common class name - “box”. Access them & add some unique text to each
+ of them. -->
+   <!-- <div class="box">adsf</div>
+   <div class="box"></div>
+   <div class="box"></div> -->
+   <!-- <h3 class="helsdf" id="h3"> </h3>
+    <p id="para"></p> --> 
+
+<!--  Create a new button element. Give it a text “click me”, background color of red & text color
+ of white.
+ Insert the button as the first element inside the body tag. -->
+
+
+ <!--  Qs. Create a <p> tag in html, give it a class & some styling. 
+Now create a new class in CSS and try to append this class to the <p> element.
+ Did you notice, how you overwrite the class name when you add a new one?
+ Solve this problem using classList. -->
+
+ 
+ 
+ <!-- Qs. Create a toggle button that changes the screen to dark-mode when clicked & light-mode
+ when clicked again. -->
+
+ <!-- <button id="btn">Click me to change theme</button> -->
+
+
+ <!-- Rock paper scissor game.. -->
+  <!-- <div class="nav">
+    <h1>Rock Paper Scissor Game..</h1>
+</div>
+<div class="body">
+    <div class="options">
+        <div class="img" id="rock"></div>
+        <div class="img" id="paper"></div>
+        <div class="img" id="scissor"></div>
+    </div>
+
+    <div class="score-board">
+        <div class="sec1">
+            <h2 id="scoreUser">0</h2>
+            <h2 id="scoreComputer">0</h2>
+        </div>
+        <div class="sec2">
+            <h3>You</h3>
+            <h3>Comp</h3>
+        </div>
+    </div>
+<div class="computerChoice">
+    Computer choice:&nbsp; <div id="compChoice"></div>
+</div>
+    <div class="instruction" id="result">
+        Pick Your Move
+    </div>
+</div>
+ -->
+
+
+ <script>
+// rock paper scissor game..
+
+// let rockElementUser=document.getElementById('rock');
+// let paperElementUser=document.getElementById('paper');
+// let scissorElementUser=document.getElementById('scissor');
+// let result=document.getElementById('result');
+
+// let compChoice=document.getElementById('compChoice');
+
+// let comp;
+// let user;
+
+//  let scoreElementUser=document.getElementById('scoreUser');
+//  let scoreElementComputer=document.getElementById('scoreComputer');
+
+//  let scoreUser=0;
+//  let scoreComputer=0;
+ 
+//  rockElementUser.onclick=()=>{
+//      user="rock";
+//      upadatingStatus();
+//     }
+//     paperElementUser.onclick=()=>{
+//         user="paper";
+//         upadatingStatus();
+//     }
+//     scissorElementUser.onclick=()=>{
+//         user="scissor";
+//         upadatingStatus();
+//     }
+    
+    
+    
+//     function upadatingStatus(){
+//         let random=Math.floor(Math.random()*100+1);
+//         if(random>=0&&random<=33)
+//         comp="rock";
+//     else if(random>33&&random<=66)
+//     comp="paper";
+// else
+// {comp="scissor";}
+
+// compChoice.innerHTML=comp;
+
+//     if(comp==="rock"&&user==="paper"){
+//         result.innerHTML="You won. Paper beats rock!";
+//         scoreUser++;
+//         scoreElementUser.innerHTML=scoreUser;
+//     }
+//     else if(comp==="paper"&&user==="rock"){
+//         result.innerHTML="You lost. Paper beats rock!";
+//         scoreComputer++;
+//         scoreElementComputer.innerHTML=scoreComputer;
+//     }
+//     else if(comp==="paper"&&user==="scissor"){
+//         result.innerHTML="You won. scissor beats paper!";
+//         scoreUser++;
+//         scoreElementUser.innerHTML=scoreUser;
+//     }
+//     else if(comp==="scissor"&&user==="paper"){
+//         result.innerHTML="You lost. scissor beats paper!";
+//         scoreComputer++;
+//         scoreElementComputer.innerHTML=scoreComputer;
+//     }
+//     else if(comp==="scissor"&&user==="rock"){
+//         result.innerHTML="You won. rock beats scissor!";
+//         scoreElementUser.innerHTML=scoreUser;
+//         scoreUser++;
+//     }
+//     else if(comp==="rock"&&user==="scissor"){
+//         result.innerHTML="You lost. rock beats scissor!";
+//         scoreComputer++;
+//         scoreElementComputer.innerHTML=scoreComputer;
+//     }
+//     else{
+//         result.innerHTML="It was a Draw";
+//     }
+// }
 
 
 
+
+
+// ...
+    // let button =document.getElementById('btn');
+    // function toggleTheme(){
+    //     if(document.body.style.backgroundColor==="white" ){
+    //     document.body.style.backgroundColor="black";
+    //     button.innerHTML="switch to light mode";
+    // }
+    // else{
+    //     document.body.style.backgroundColor="white";
+    //     button.innerHTML="switch to dark mode";
+    // }
+    // }
+    // button.addEventListener("click",toggleTheme);
+   
+
+    // let heading=document.createElement("h2");
+    // heading.innerText="hello javascript";
+    // heading.innerText+=" from aamir rafique";
+    // document.body.append(heading)
+
+    // let head3=document.getElementById("h3");
+    // let setatt=head3.setAttribute("class","heading-3")
+    // let getattrib=head3.getAttribute("class");
+    // document.getElementById("para").innerText=getattrib;
+    // document.body.style.backgroundColor="#f9ac2a";
+
+
+
+    // const boxes=document.getElementsByClassName("box");
+    
+    // boxes[0].textContent="Hello world!";
+    // boxes[1].textContent=" world!";
+    // boxes[2].textContent="lo world!";
+
+    
+
+//  let button=document.createElement("button");
+//  button.innerText="click me to change theme";
+//  button.style.backgroundColor="red";
+//  button.style.color="white";
+
+//  document.body.append(button);
+
+
+
+ 
+
+ </script>
 </body>
+
 
 </html>

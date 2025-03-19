@@ -48,6 +48,10 @@ nav #menu {
     display: none;
 }
 
+#slide-menu{
+    display: none;
+}
+
 /* HEADER */
 
 header .hero {
@@ -203,6 +207,8 @@ header .hero {
     width: 100%;
     background-color: white;
 }
+
+
 
 /*------ Main-------- */
 

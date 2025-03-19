@@ -475,12 +475,194 @@ let txt = "";
 
 // ... video no. 74
 
-let button = document.getElementById("btn");
-button.addEventListener("mouseover", () => {
-    alert("Hey there!");
-});
+// let button = document.getElementById("btn");
+// button.addEventListener("mouseover", () => {
+//     alert("Hey there!");
+// });
 
 // let button = document.getElementById("btn");
 // button.addEventListener("mouseover", (e) => {
 //     console.log(e,e.key or e.keycode);
 // });
+
+
+
+
+
+
+// .............js practice sets apna college...............
+
+//practice set 1.
+// const product ={company:"Parker",type:"Jotter",size:"Standard",_name:"CT Ball Pen",color:"Black",rating:7002,specialPrice:270,price:285,discount:0.05};
+
+// console.log(product._name);
+
+
+//practice set 2.
+// let num=prompt("Enter a number:")
+// if(num%5==0) alert("It is the multiple of 5");
+// else alert("Not the multiple of 5.");
+
+//practice set 3.
+
+//number guessing game..
+// let randomNumber = Math.floor(Math.random() * 100) + 1;
+// console.log(randomNumber);
+// // let i = 100;
+// while (true) {
+//     let guessedNumber = prompt("Guess the number bw 1 - 100:")
+//     if (guessedNumber >= 1 && guessedNumber <= 100) {
+//         if (guessedNumber > randomNumber) alert("Guess a smaller number.");
+//         else if (guessedNumber < randomNumber) alert("Guess a bigger number.");
+//         else { alert("Hurrah! you have won the game."); break; }
+//     }
+//     else alert("Invalid number!");
+// }
+
+// 
+
+// let name$="jhon";
+// console.log(`my name is ${name$}`);
+
+// 
+// let _name = prompt("Please input your name");
+// let randomNumber = Math.floor(Math.random() * 100) + 1;
+// let userName=`@${_name}${randomNumber}`;
+// alert(userName);
+
+
+
+
+//practice set 4.*************
+
+// const marks = [85, 97, 44, 37, 76, 60];
+// let avg=0;
+// let totMarks=0;
+// for (let i = 0; i < marks.length; i++)
+// {   
+//     totMarks+=marks[i];
+// }
+
+// avg=totMarks/marks.length;
+
+// alert(avg);
+
+
+// ...discount 10% on each item
+// const items=[250, 645, 300, 900, 50];
+// let discount=0.1;
+// let newPrice;
+// for (let i = 0; i < items.length; i++)
+// {   
+//     newPrice=items[i]*discount;
+//     items[i]-=newPrice;
+// }
+
+// for(let item in items){
+//     console.log(items[item]);
+// }
+
+
+//3..
+// const companies = ["Bloomberg", "Microsoft", "Uber", "Google", "IBM", "Netflix"];
+// a. Remove the first company from the array
+// companies.shift();
+
+// b. Remove Uber & Add Ola in its place
+// companies.splice(2,1,"Ola");
+
+// c. Add Amazon at the end
+// companies.push("Amazon");
+// console.log(companies.toString());
+
+
+
+
+
+//Practice set 5......................
+
+// Create a function using the “function” keyword that takes a String as an argument &
+//  returns the number of vowels in the string.
+// let string="awedsfji";
+// let newString=string.includes("a"||"e"||"i"||"o"||"u");
+
+// console.log(newString);
+
+
+
+// let str = prompt("Please input any word to find the number of vowels it contains:");
+// alert(vowelCounter(str));
+
+// function vowelCounter(str) {
+//     let vowelCount = 0, vowels = "aeiouAEIOU"; // Including uppercase vowels
+//     for (let i = 0; i < str.length; i++) {
+//         if (vowels.includes(str[i])) {
+//             vowelCount++;
+//         }
+//     }
+//     return vowelCount;
+// }
+
+//Now doing the same using arrow function..
+
+// let str = prompt("Please input any word to find the number of vowels it contains:");
+// const vowelCount = (str) => {
+//     let vowelCount = 0, vowels = "aeiouAEIOU"; // Including uppercase vowels
+//     for (let i = 0; i < str.length; i++) {
+//         if (vowels.includes(str[i])) {
+//             vowelCount++;
+//         }
+//     }
+//     return vowelCount;
+// }
+// alert(vowelCount(str));
+
+
+// ...................
+
+// Qs. For a given array of numbers, print the square of each value using the forEach loop.
+
+// const array=[1,2,3,4,5];
+// array.forEach(element => {
+//     console.log(element*element);
+// });
+
+// Qs. We are given array of marks of students. Filter our of the marks of students that scored 90+.
+// const marks=[40,91,70,92,99,50,100];
+// let newArray=marks.filter(val=>{
+//     return val>90;
+// })
+
+// for(let marks of newArray){
+//     console.log(marks);
+// }
+
+
+
+//...............
+
+// Qs. Take a number n as input from user. Create an array of numbers from 1 to n.
+// Use the reduce method to calculate sum of all numbers in the array.
+// Use the reduce method to calculate product of all numbers in the array.
+
+// let n=prompt("Please input a the number of values for the array:");
+// const array=[];
+// for(let i=0;i<n;i++){
+//     array[i]=i+1;
+// }
+
+// for (const arr of array) {
+// console.log(arr);
+// }
+// let sum = array.reduce((total, currentValue) => total + currentValue, 0);
+// console.log("sum = "+sum); // This will display the sum of all numbers in the array.
+ 
+// let product = array.reduce((total, currentValue) => total * currentValue, 1);
+// console.log("product = "+product); // This will display the sum of all numbers in the array.
+ 
+
+
+// .....
+// Qs. Create a H2 heading element with text - “Hello JavaScript”. Append “from Apna College
+//  students” to this text using JS.
+

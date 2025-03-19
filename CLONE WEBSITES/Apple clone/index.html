@@ -9,6 +9,19 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="mobileStyles.css">
     <link rel="shortcut icon" href="images/apple.png" type="image/x-icon">
+
+
+    <script>
+        function SlideMenu() {
+            var menu = document.getElementById('slide-menu');
+            if (menu.style.display === "none" || menu.style.display === "") {
+                menu.style.display = "flex";
+            } else {
+                menu.style.display = "none";
+            }
+        }
+    </script>
+
 </head>
 
 <body>
@@ -29,8 +42,26 @@
         </ul>
         <a href="#"><img src="images/search-interface-symbol.png" alt=""></a>
         <a href="#"><img src="images/shop_icon.svg" alt=""></a>
-        <a href="#"><img id="menu" src="images/menu.png" alt=""></a>
+        <a href="#"><img id="menu" onclick="SlideMenu()" src="images/menu.png" alt=""></a>
     </nav>
+
+    <div class="slider">
+        <div id="slide-menu">
+            <ul>
+                <li><a href="#" id="items">Store</a></li>
+                <li><a href="#" id="items">Mac</a></li>
+                <li><a href="#" id="items">iPad</a></li>
+                <li><a href="#" id="items">iPhone</a></li>
+                <li><a href="#" id="items">Watch</a></li>
+                <li><a href="#" id="items">Vision</a></li>
+                <li><a href="#" id="items">AirPods</a></li>
+                <li><a href="#" id="items">TV & Home</a></li>
+                <li><a href="#" id="items">Entertainment</a></li>
+                <li><a href="#" id="items">Accessories</a></li>
+                <li><a href="#" id="items">Support</a></li>
+            </ul>
+        </div>
+    </div>
 
     <header>
         <div class="hero">
