@@ -64,8 +64,8 @@
             border-radius: 3px;
             } */
 
-/* Rock paper scissor game.. */
-/* *{
+        /* Rock paper scissor game.. */
+        /* *{
     padding: 0;
 margin: 0;
 }
@@ -172,7 +172,7 @@ margin: 0;
             align-items: center;
             font-size: 1.5vmax;
         } */
-</style>
+    </style>
 
 </head>
 
@@ -200,11 +200,11 @@ margin: 0;
     <!-- <div  class="container">
       
     </div> -->
-<!-- 
+    <!-- 
     <button onclick="UploadVideo()">
         upload video
     </button> -->
-    
+
 
 
     <!-- Video 74 -->
@@ -221,36 +221,36 @@ margin: 0;
     <!-- Qs. Create a H2 heading element with text - “Hello JavaScript”. Append “from Apna College
  students” to this text using JS. -->
 
- <!-- <h2 id="heading">Hello JavaScript</h2> -->
+    <!-- <h2 id="heading">Hello JavaScript</h2> -->
 
- <!--  Qs. Create 3 divs with common class name - “box”. Access them & add some unique text to each
+    <!--  Qs. Create 3 divs with common class name - “box”. Access them & add some unique text to each
  of them. -->
-   <!-- <div class="box">adsf</div>
+    <!-- <div class="box">adsf</div>
    <div class="box"></div>
    <div class="box"></div> -->
-   <!-- <h3 class="helsdf" id="h3"> </h3>
-    <p id="para"></p> --> 
+    <!-- <h3 class="helsdf" id="h3"> </h3>
+    <p id="para"></p> -->
 
-<!--  Create a new button element. Give it a text “click me”, background color of red & text color
+    <!--  Create a new button element. Give it a text “click me”, background color of red & text color
  of white.
  Insert the button as the first element inside the body tag. -->
 
 
- <!--  Qs. Create a <p> tag in html, give it a class & some styling. 
+    <!--  Qs. Create a <p> tag in html, give it a class & some styling. 
 Now create a new class in CSS and try to append this class to the <p> element.
  Did you notice, how you overwrite the class name when you add a new one?
  Solve this problem using classList. -->
 
- 
- 
- <!-- Qs. Create a toggle button that changes the screen to dark-mode when clicked & light-mode
+
+
+    <!-- Qs. Create a toggle button that changes the screen to dark-mode when clicked & light-mode
  when clicked again. -->
 
- <!-- <button id="btn">Click me to change theme</button> -->
+    <!-- <button id="btn">Click me to change theme</button> -->
 
 
- <!-- Rock paper scissor game.. -->
-  <!-- <div class="nav">
+    <!-- Rock paper scissor game.. -->
+    <!-- <div class="nav">
     <h1>Rock Paper Scissor Game..</h1>
 </div>
 <div class="body">
@@ -280,138 +280,172 @@ Now create a new class in CSS and try to append this class to the <p> element.
  -->
 
 
- <script>
-// rock paper scissor game..
 
-// let rockElementUser=document.getElementById('rock');
-// let paperElementUser=document.getElementById('paper');
-// let scissorElementUser=document.getElementById('scissor');
-// let result=document.getElementById('result');
+    <script>
+        // rock paper scissor game..
 
-// let compChoice=document.getElementById('compChoice');
+        // let rockElementUser=document.getElementById('rock');
+        // let paperElementUser=document.getElementById('paper');
+        // let scissorElementUser=document.getElementById('scissor');
+        // let result=document.getElementById('result');
 
-// let comp;
-// let user;
+        // let compChoice=document.getElementById('compChoice');
 
-//  let scoreElementUser=document.getElementById('scoreUser');
-//  let scoreElementComputer=document.getElementById('scoreComputer');
+        // let comp;
+        // let user;
 
-//  let scoreUser=0;
-//  let scoreComputer=0;
- 
-//  rockElementUser.onclick=()=>{
-//      user="rock";
-//      upadatingStatus();
-//     }
-//     paperElementUser.onclick=()=>{
-//         user="paper";
-//         upadatingStatus();
-//     }
-//     scissorElementUser.onclick=()=>{
-//         user="scissor";
-//         upadatingStatus();
-//     }
-    
-    
-    
-//     function upadatingStatus(){
-//         let random=Math.floor(Math.random()*100+1);
-//         if(random>=0&&random<=33)
-//         comp="rock";
-//     else if(random>33&&random<=66)
-//     comp="paper";
-// else
-// {comp="scissor";}
+        //  let scoreElementUser=document.getElementById('scoreUser');
+        //  let scoreElementComputer=document.getElementById('scoreComputer');
 
-// compChoice.innerHTML=comp;
+        //  let scoreUser=0;
+        //  let scoreComputer=0;
 
-//     if(comp==="rock"&&user==="paper"){
-//         result.innerHTML="You won. Paper beats rock!";
-//         scoreUser++;
-//         scoreElementUser.innerHTML=scoreUser;
-//     }
-//     else if(comp==="paper"&&user==="rock"){
-//         result.innerHTML="You lost. Paper beats rock!";
-//         scoreComputer++;
-//         scoreElementComputer.innerHTML=scoreComputer;
-//     }
-//     else if(comp==="paper"&&user==="scissor"){
-//         result.innerHTML="You won. scissor beats paper!";
-//         scoreUser++;
-//         scoreElementUser.innerHTML=scoreUser;
-//     }
-//     else if(comp==="scissor"&&user==="paper"){
-//         result.innerHTML="You lost. scissor beats paper!";
-//         scoreComputer++;
-//         scoreElementComputer.innerHTML=scoreComputer;
-//     }
-//     else if(comp==="scissor"&&user==="rock"){
-//         result.innerHTML="You won. rock beats scissor!";
-//         scoreElementUser.innerHTML=scoreUser;
-//         scoreUser++;
-//     }
-//     else if(comp==="rock"&&user==="scissor"){
-//         result.innerHTML="You lost. rock beats scissor!";
-//         scoreComputer++;
-//         scoreElementComputer.innerHTML=scoreComputer;
-//     }
-//     else{
-//         result.innerHTML="It was a Draw";
-//     }
-// }
+        //  rockElementUser.onclick=()=>{
+        //      user="rock";
+        //      upadatingStatus();
+        //     }
+        //     paperElementUser.onclick=()=>{
+        //         user="paper";
+        //         upadatingStatus();
+        //     }
+        //     scissorElementUser.onclick=()=>{
+        //         user="scissor";
+        //         upadatingStatus();
+        //     }
 
 
 
+        //     function upadatingStatus(){
+        //         let random=Math.floor(Math.random()*100+1);
+        //         if(random>=0&&random<=33)
+        //         comp="rock";
+        //     else if(random>33&&random<=66)
+        //     comp="paper";
+        // else
+        // {comp="scissor";}
+
+        // compChoice.innerHTML=comp;
+
+        //     if(comp==="rock"&&user==="paper"){
+        //         result.innerHTML="You won. Paper beats rock!";
+        //         scoreUser++;
+        //         scoreElementUser.innerHTML=scoreUser;
+        //     }
+        //     else if(comp==="paper"&&user==="rock"){
+        //         result.innerHTML="You lost. Paper beats rock!";
+        //         scoreComputer++;
+        //         scoreElementComputer.innerHTML=scoreComputer;
+        //     }
+        //     else if(comp==="paper"&&user==="scissor"){
+        //         result.innerHTML="You won. scissor beats paper!";
+        //         scoreUser++;
+        //         scoreElementUser.innerHTML=scoreUser;
+        //     }
+        //     else if(comp==="scissor"&&user==="paper"){
+        //         result.innerHTML="You lost. scissor beats paper!";
+        //         scoreComputer++;
+        //         scoreElementComputer.innerHTML=scoreComputer;
+        //     }
+        //     else if(comp==="scissor"&&user==="rock"){
+        //         result.innerHTML="You won. rock beats scissor!";
+        //         scoreElementUser.innerHTML=scoreUser;
+        //         scoreUser++;
+        //     }
+        //     else if(comp==="rock"&&user==="scissor"){
+        //         result.innerHTML="You lost. rock beats scissor!";
+        //         scoreComputer++;
+        //         scoreElementComputer.innerHTML=scoreComputer;
+        //     }
+        //     else{
+        //         result.innerHTML="It was a Draw";
+        //     }
+        // }
 
 
-// ...
-    // let button =document.getElementById('btn');
-    // function toggleTheme(){
-    //     if(document.body.style.backgroundColor==="white" ){
-    //     document.body.style.backgroundColor="black";
-    //     button.innerHTML="switch to light mode";
-    // }
-    // else{
-    //     document.body.style.backgroundColor="white";
-    //     button.innerHTML="switch to dark mode";
-    // }
-    // }
-    // button.addEventListener("click",toggleTheme);
-   
-
-    // let heading=document.createElement("h2");
-    // heading.innerText="hello javascript";
-    // heading.innerText+=" from aamir rafique";
-    // document.body.append(heading)
-
-    // let head3=document.getElementById("h3");
-    // let setatt=head3.setAttribute("class","heading-3")
-    // let getattrib=head3.getAttribute("class");
-    // document.getElementById("para").innerText=getattrib;
-    // document.body.style.backgroundColor="#f9ac2a";
 
 
 
-    // const boxes=document.getElementsByClassName("box");
-    
-    // boxes[0].textContent="Hello world!";
-    // boxes[1].textContent=" world!";
-    // boxes[2].textContent="lo world!";
-
-    
-
-//  let button=document.createElement("button");
-//  button.innerText="click me to change theme";
-//  button.style.backgroundColor="red";
-//  button.style.color="white";
-
-//  document.body.append(button);
-
+        // ...
+        // let button =document.getElementById('btn');
+        // function toggleTheme(){
+        //     if(document.body.style.backgroundColor==="white" ){
+        //     document.body.style.backgroundColor="black";
+        //     button.innerHTML="switch to light mode";
+        // }
+        // else{
+        //     document.body.style.backgroundColor="white";
+        //     button.innerHTML="switch to dark mode";
+        // }
+        // }
+        // button.addEventListener("click",toggleTheme);
 
 
- 
+        // let heading=document.createElement("h2");
+        // heading.innerText="hello javascript";
+        // heading.innerText+=" from aamir rafique";
+        // document.body.append(heading)
 
- </script>
+        // let head3=document.getElementById("h3");
+        // let setatt=head3.setAttribute("class","heading-3")
+        // let getattrib=head3.getAttribute("class");
+        // document.getElementById("para").innerText=getattrib;
+        // document.body.style.backgroundColor="#f9ac2a";
+
+
+
+        // const boxes=document.getElementsByClassName("box");
+
+        // boxes[0].textContent="Hello world!";
+        // boxes[1].textContent=" world!";
+        // boxes[2].textContent="lo world!";
+
+
+
+        //  let button=document.createElement("button");
+        //  button.innerHTML="click me to change theme";
+        //  button.style.backgroundColor="red";
+        //  button.style.color="white";
+
+        //  document.body.append(button);
+
+        // OOP in js..
+        // inheritance in javascript..
+
+        // Qs. You are creating a website for your college. Create a class 
+        // User with 2 properties, name &
+        //  email. It also has a method called viewData( ) that allows user to view website data.
+
+        class User {
+            constructor(name, email) {
+                this.name = name;
+                this.email = email;
+            }
+            viewData() {
+                return `name= ${this.name},\nemail= ${this.email}`;
+            }
+        }
+
+        // const user1=new User("Aamir","amir@gmail.com");
+        // let heading1 = document.createElement("h1");
+        // heading1.innerHTML = user1.viewData();
+        // document.body.append(heading1);
+
+        // console.log(user1.viewData());
+
+
+        //Qs. Create a new class called Admin which inherits from User. Add a new method called editData to Admin that allows it to edit website data.
+        class Admin extends User{
+            constructor(name,email){
+                super(name,email);
+            }
+            editData(name,email){
+                this.name=name;
+                this.email=email;
+            }
+        }
+
+
+    </script>
 </body>
 
 
