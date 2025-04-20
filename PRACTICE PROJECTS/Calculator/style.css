@@ -33,7 +33,7 @@ body{
     color: white;
     background-color: black;
     box-shadow: none;    
-    border: none;
+    /* border: none; */
 }
 
 button{
