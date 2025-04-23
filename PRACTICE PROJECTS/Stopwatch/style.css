@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    background-color: rgb(110, 250, 255);
+}
+
+body>h1 {
+    font-size: 50px;
+}
+
+.container {
+    height: auto;
+    width: auto;
+    background-image: linear-gradient(to right, rgb(157, 243, 201), rgb(182, 196, 184), rgb(229, 167, 81));
+    ;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: 30px;
+    border: 2px solid black;
+    border-radius: 25px;
+}
+
+.container #timer {
+    text-align: center;
+    font-size: 70px;
+    /* background-color: yellow; */
+}
+
+.container .controls {
+    width: 400px;
+    display: flex;
+    /* background-color: greenyellow; */
+    justify-content: space-between;
+
+}
+
+.container .controls button {
+    height: 50px;
+    width: 90px;
+    font-size: 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    color: white;
+}
+
+.container .controls #btnStart {
+    background-color: rgb(1, 217, 109);
+}
+
+.container .controls #btnPause {
+    background-color: gray;
+}
+
+.container .controls #btnReset {
+    background-color: orangered;
+}
+
+.container #time-indicator {
+    font-size: 25px;
+    /* background-color: aqua; */
+    text-align: center;
+}
